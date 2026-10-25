@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MotorYa</string>
+
+    <string name="action_add">Agregar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_delete">Borrar</string>
+    <string name="action_back">Volver</string>
+    <string name="action_ok">Listo</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_see_all">Ver todo</string>
+    <string name="field_date">Fecha</string>
+    <string name="unit_months">meses</string>
+    <string name="currency_usd">Dólares</string>
+    <string name="currency_ves">Bolívares</string>
+
+    <string name="home_empty_title">Tu carro al día</string>
+    <string name="home_empty_body">Anota la gasolina, el mantenimiento y los papeles de tu carro o moto. Te avisamos antes de que toque.</string>
+    <string name="home_odometer">Odómetro</string>
+    <string name="home_month">Gasto del mes</string>
+    <string name="home_km_per_liter">KM / LITRO</string>
+    <string name="home_gauge_empty">Llena el tanque dos veces y anótalo para medir el rendimiento.</string>
+    <string name="home_gauge_last">Último tanque: %s km/L</string>
+    <string name="home_services">Mantenimiento</string>
+    <string name="home_services_empty">Agrega el cambio de aceite, cauchos o frenos y te avisamos cuando toque.</string>
+    <string name="home_papers">Papeles</string>
+    <string name="home_papers_empty">Agrega el seguro, la revisión o la licencia y te avisamos antes de que venzan.</string>
+    <string name="home_add_fuel">Gasolina</string>
+    <string name="home_add_expense">Gasto</string>
+
+    <string name="vehicle_add">Agregar vehículo</string>
+    <string name="vehicle_add_pro">Más vehículos (pago único)</string>
+    <string name="vehicle_edit">Editar vehículo</string>
+    <string name="vehicle_type">Tipo</string>
+    <string name="vehicle_car">Carro</string>
+    <string name="vehicle_moto">Moto</string>
+    <string name="vehicle_name">Nombre</string>
+    <string name="vehicle_name_hint">Corolla 2014, la moto…</string>
+    <string name="vehicle_plate">Placa (opcional)</string>
+    <string name="vehicle_odometer">Kilometraje actual</string>
+    <string name="vehicle_limit">La versión gratis tiene 1 vehículo. Con el pago único puedes agregar todos los de la familia.</string>
+
+    <string name="fuel_title">Carga de gasolina</string>
+    <string name="fuel_odometer">Kilometraje</string>
+    <string name="fuel_liters">Litros</string>
+    <string name="fuel_full">Llené el tanque</string>
+    <string name="fuel_full_hint">El rendimiento se mide entre dos tanques llenos.</string>
+    <string name="fuel_cost">Cuánto pagaste (opcional)</string>
+
+    <string name="service_oil">Aceite</string>
+    <string name="service_oil_filter">Filtro de aceite</string>
+    <string name="service_air_filter">Filtro de aire</string>
+    <string name="service_tires">Cauchos</string>
+    <string name="service_brakes">Frenos</string>
+    <string name="service_battery">Batería</string>
+    <string name="service_coolant">Refrigerante</string>
+    <string name="service_other">Otro</string>
+    <string name="service_new">Nuevo mantenimiento</string>
+    <string name="service_edit">Mantenimiento</string>
+    <string name="service_kind">Qué es</string>
+    <string name="service_name">Nombre</string>
+    <string name="service_every">Cada cuánto</string>
+    <string name="service_every_km">Cada</string>
+    <string name="service_every_months">O cada</string>
+    <string name="service_every_hint">Te avisamos con lo que llegue primero. Deja uno vacío si no aplica.</string>
+    <string name="service_last">La última vez</string>
+    <string name="service_last_km">Kilometraje</string>
+    <string name="service_cost">Cuánto costó (opcional)</string>
+    <string name="service_done_today">Lo hice hoy</string>
+    <string name="service_km_left">faltan %s km</string>
+    <string name="service_overdue_km">pasado por %s km</string>
+    <string name="service_overdue_date">ya toca</string>
+    <string name="service_next_at">Próximo a los %s km</string>
+    <string name="services_empty">Agrega el cambio de aceite, cauchos o frenos.\nTe avisamos por km o por fecha, lo que llegue primero.</string>
+
+    <string name="paper_insurance">Seguro</string>
+    <string name="paper_inspection">Revisión técnica</string>
+    <string name="paper_license">Licencia</string>
+    <string name="paper_registration">Título / carnet</string>
+    <string name="paper_permit">Permiso</string>
+    <string name="paper_other">Otro</string>
+    <string name="paper_new">Nuevo papel</string>
+    <string name="paper_edit">Papel</string>
+    <string name="paper_kind">Qué es</string>
+    <string name="paper_name">Nombre (opcional)</string>
+    <string name="paper_name_hint">Seguro RCV, licencia de 5ta…</string>
+    <string name="paper_expires">Vence el</string>
+    <string name="paper_expires_on">Vence el %s</string>
+    <string name="paper_expired">vencido</string>
+    <string name="paper_remind">Avisarme (puedes marcar varios)</string>
+    <string name="papers_empty">Agrega el seguro, la revisión o la licencia.</string>
+    <string name="papers_pro">Los papeles con aviso de vencimiento vienen con el pago único.</string>
+    <string name="remind_same_day">El mismo día</string>
+    <plurals name="remind_days">
+        <item quantity="one">%d día antes</item>
+        <item quantity="other">%d días antes</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">%d día</item>
+        <item quantity="other">%d días</item>
+    </plurals>
+
+    <string name="cat_fuel">Gasolina</string>
+    <string name="cat_service">Mantenimiento</string>
+    <string name="cat_papers">Papeles</string>
+    <string name="cat_repair">Reparación</string>
+    <string name="cat_parking">Estacionamiento</string>
+    <string name="cat_wash">Lavado</string>
+    <string name="cat_other">Otro</string>
+    <string name="expenses_title">Gastos</string>
+    <string name="expenses_empty">Aquí salen la gasolina y todo lo que gastes en el vehículo, mes por mes.</string>
+    <string name="expense_new">Nuevo gasto</string>
+    <string name="expense_edit">Gasto</string>
+    <string name="expense_amount">Monto</string>
+    <string name="expense_category">En qué</string>
+    <string name="expense_note">Nota (opcional)</string>
+
+    <string name="notif_channel">Avisos del vehículo</string>
+    <string name="notif_paper_today">%s vence hoy</string>
+    <plurals name="notif_paper_before">
+        <item quantity="one">%1$s vence mañana</item>
+        <item quantity="other">%1$s vence en %2$d días</item>
+    </plurals>
+    <string name="notif_service_soon">Ya casi toca: %s</string>
+    <string name="notif_service_due">Ya toca: %s</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_rate">Tasa del dólar</string>
+    <string name="settings_rate_field">Bolívares por dólar</string>
+    <string name="settings_rate_hint">Cada gasto guarda la tasa del día en que lo anotas, para verlo en dólares y en bolívares.</string>
+    <string name="settings_pro">Pago único</string>
+    <string name="settings_pro_body">2,99 USD una sola vez: sin anuncios, varios vehículos, papeles con aviso y gastos en dólares y bolívares.</string>
+    <string name="settings_pro_test">Activar para probar</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="about_version">%1$s %2$s</string>
+    <string name="about_credit">Hecho por lacosta.agency</string>
+</resources>

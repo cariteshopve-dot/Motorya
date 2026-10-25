@@ -1,0 +1,49 @@
+name: APK de prueba
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Pruebas
+        run: ./gradlew testDebugUnitTest
+
+      - name: Compilar APK
+        run: ./gradlew assembleDebug
+
+      - name: Renombrar APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk MotorYa-prueba.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MotorYa-prueba
+          path: MotorYa-prueba.apk
+
+      # En main, el APK queda en una página fija para bajarlo desde el teléfono.
+      - name: Publicar en "Última versión de prueba"
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: prueba
+          name: Última versión de prueba
+          prerelease: true
+          make_latest: false
+          body: APK de prueba compilado desde main (${{ github.sha }}). Bájalo desde el teléfono e instálalo.
+          files: MotorYa-prueba.apk

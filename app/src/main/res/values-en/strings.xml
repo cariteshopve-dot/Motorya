@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_add">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_back">Back</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_see_all">See all</string>
+    <string name="field_date">Date</string>
+    <string name="unit_months">months</string>
+    <string name="currency_usd">Dollars</string>
+    <string name="currency_ves">Bolívars</string>
+
+    <string name="home_empty_title">Your car, up to date</string>
+    <string name="home_empty_body">Track fuel, maintenance and paperwork for your car or motorcycle. We remind you before it is due.</string>
+    <string name="home_odometer">Odometer</string>
+    <string name="home_month">This month</string>
+    <string name="home_km_per_liter">KM / LITER</string>
+    <string name="home_gauge_empty">Log two full tanks to measure fuel economy.</string>
+    <string name="home_gauge_last">Last tank: %s km/L</string>
+    <string name="home_services">Maintenance</string>
+    <string name="home_services_empty">Add oil change, tires or brakes and we remind you when it is due.</string>
+    <string name="home_papers">Papers</string>
+    <string name="home_papers_empty">Add insurance, inspection or license and we remind you before they expire.</string>
+    <string name="home_add_fuel">Fuel</string>
+    <string name="home_add_expense">Expense</string>
+
+    <string name="vehicle_add">Add vehicle</string>
+    <string name="vehicle_add_pro">More vehicles (one-time purchase)</string>
+    <string name="vehicle_edit">Edit vehicle</string>
+    <string name="vehicle_type">Type</string>
+    <string name="vehicle_car">Car</string>
+    <string name="vehicle_moto">Motorcycle</string>
+    <string name="vehicle_name">Name</string>
+    <string name="vehicle_name_hint">Corolla 2014, the bike…</string>
+    <string name="vehicle_plate">Plate (optional)</string>
+    <string name="vehicle_odometer">Current mileage</string>
+    <string name="vehicle_limit">The free version has 1 vehicle. The one-time purchase lets you add the whole family\'s.</string>
+
+    <string name="fuel_title">Fill-up</string>
+    <string name="fuel_odometer">Mileage</string>
+    <string name="fuel_liters">Liters</string>
+    <string name="fuel_full">Filled the tank</string>
+    <string name="fuel_full_hint">Fuel economy is measured between two full tanks.</string>
+    <string name="fuel_cost">How much you paid (optional)</string>
+
+    <string name="service_oil">Oil</string>
+    <string name="service_oil_filter">Oil filter</string>
+    <string name="service_air_filter">Air filter</string>
+    <string name="service_tires">Tires</string>
+    <string name="service_brakes">Brakes</string>
+    <string name="service_battery">Battery</string>
+    <string name="service_coolant">Coolant</string>
+    <string name="service_other">Other</string>
+    <string name="service_new">New maintenance</string>
+    <string name="service_edit">Maintenance</string>
+    <string name="service_kind">What</string>
+    <string name="service_name">Name</string>
+    <string name="service_every">How often</string>
+    <string name="service_every_km">Every</string>
+    <string name="service_every_months">Or every</string>
+    <string name="service_every_hint">We remind you with whichever comes first. Leave one empty if it does not apply.</string>
+    <string name="service_last">Last time</string>
+    <string name="service_last_km">Mileage</string>
+    <string name="service_cost">Cost (optional)</string>
+    <string name="service_done_today">Done today</string>
+    <string name="service_km_left">%s km left</string>
+    <string name="service_overdue_km">%s km over</string>
+    <string name="service_overdue_date">due now</string>
+    <string name="service_next_at">Next at %s km</string>
+    <string name="services_empty">Add oil change, tires or brakes.\nWe remind you by km or by date, whichever comes first.</string>
+
+    <string name="paper_insurance">Insurance</string>
+    <string name="paper_inspection">Inspection</string>
+    <string name="paper_license">License</string>
+    <string name="paper_registration">Registration</string>
+    <string name="paper_permit">Permit</string>
+    <string name="paper_other">Other</string>
+    <string name="paper_new">New paper</string>
+    <string name="paper_edit">Paper</string>
+    <string name="paper_kind">What</string>
+    <string name="paper_name">Name (optional)</string>
+    <string name="paper_name_hint">Liability insurance, driver\'s license…</string>
+    <string name="paper_expires">Expires on</string>
+    <string name="paper_expires_on">Expires %s</string>
+    <string name="paper_expired">expired</string>
+    <string name="paper_remind">Remind me (pick any)</string>
+    <string name="papers_empty">Add insurance, inspection or license.</string>
+    <string name="papers_pro">Papers with expiry reminders come with the one-time purchase.</string>
+    <string name="remind_same_day">Same day</string>
+    <plurals name="remind_days">
+        <item quantity="one">%d day before</item>
+        <item quantity="other">%d days before</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
+    <string name="cat_fuel">Fuel</string>
+    <string name="cat_service">Maintenance</string>
+    <string name="cat_papers">Papers</string>
+    <string name="cat_repair">Repair</string>
+    <string name="cat_parking">Parking</string>
+    <string name="cat_wash">Wash</string>
+    <string name="cat_other">Other</string>
+    <string name="expenses_title">Expenses</string>
+    <string name="expenses_empty">Fuel and everything you spend on the vehicle shows up here, month by month.</string>
+    <string name="expense_new">New expense</string>
+    <string name="expense_edit">Expense</string>
+    <string name="expense_amount">Amount</string>
+    <string name="expense_category">For</string>
+    <string name="expense_note">Note (optional)</string>
+
+    <string name="notif_channel">Vehicle reminders</string>
+    <string name="notif_paper_today">%s expires today</string>
+    <plurals name="notif_paper_before">
+        <item quantity="one">%1$s expires tomorrow</item>
+        <item quantity="other">%1$s expires in %2$d days</item>
+    </plurals>
+    <string name="notif_service_soon">Almost due: %s</string>
+    <string name="notif_service_due">Due now: %s</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_rate">Dollar rate</string>
+    <string name="settings_rate_field">Bolívars per dollar</string>
+    <string name="settings_rate_hint">Each expense keeps the rate of the day you log it, so you see it in dollars and bolívars.</string>
+    <string name="settings_pro">One-time purchase</string>
+    <string name="settings_pro_body">2.99 USD once: no ads, several vehicles, papers with reminders and expenses in dollars and bolívars.</string>
+    <string name="settings_pro_test">Turn on to test</string>
+    <string name="settings_about">About</string>
+    <string name="about_version">%1$s %2$s</string>
+    <string name="about_credit">Made by lacosta.agency</string>
+</resources>
