@@ -35,6 +35,7 @@ class AddVehicleTest {
         rule.onNodeWithText("Corolla 2014").assertExists()
         // Las demás pantallas también deben abrir sin cerrarse.
         rule.onNodeWithText("Gasolina").performClick()
-        rule.onNodeWithText("Carga de gasolina").assertExists()
+        // La pantalla se dibuja cuando termina de cargar sus datos; esperar en vez de mirar enseguida.
+        rule.waitUntil(5_000) { rule.onAllNodes(hasText("Carga de gasolina")).fetchSemanticsNodes().isNotEmpty() }
     }
 }
