@@ -30,6 +30,8 @@ class AddVehicleTest {
         rule.onAllNodes(hasSetTextAction() and hasText("Kilometraje actual")).onFirst().performTextInput("84520")
         rule.onNodeWithText("Guardar").performClick()
         rule.waitUntil(5_000) { rule.onAllNodes(hasText("Corolla 2014")).fetchSemanticsNodes().isNotEmpty() }
-        rule.onNodeWithText("Gasolina").assertExists()
+        // Las demás pantallas también deben abrir sin cerrarse.
+        rule.onNodeWithText("Gasolina").performClick()
+        rule.onNodeWithText("Carga de gasolina").assertExists()
     }
 }
