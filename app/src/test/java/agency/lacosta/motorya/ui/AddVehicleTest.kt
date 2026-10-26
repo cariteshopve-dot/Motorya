@@ -7,7 +7,6 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
-import androidx.compose.ui.test.and
 import agency.lacosta.motorya.MainActivity
 import org.junit.Rule
 import org.junit.Test
