@@ -6,6 +6,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import agency.lacosta.motorya.MainActivity
 import org.junit.Rule
@@ -28,8 +29,10 @@ class AddVehicleTest {
         rule.waitForIdle()
         rule.onAllNodes(hasSetTextAction() and hasText("Nombre")).onFirst().performTextInput("Corolla 2014")
         rule.onAllNodes(hasSetTextAction() and hasText("Kilometraje actual")).onFirst().performTextInput("84520")
-        rule.onNodeWithText("Guardar").performClick()
-        rule.waitUntil(5_000) { rule.onAllNodes(hasText("Corolla 2014")).fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("Guardar").performScrollTo().performClick()
+        // Esperar al tablero: el botón Gasolina solo está ahí (el nombre también aparece en el formulario).
+        rule.waitUntil(5_000) { rule.onAllNodes(hasText("Gasolina")).fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("Corolla 2014").assertExists()
         // Las demás pantallas también deben abrir sin cerrarse.
         rule.onNodeWithText("Gasolina").performClick()
         rule.onNodeWithText("Carga de gasolina").assertExists()
